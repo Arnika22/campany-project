@@ -1,0 +1,17 @@
+.container{
+    background-image: url(wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    border-radius: 4px;
+    
+    margin-top: 100px;
+    
+}
+body{
+    background-image: url(back.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+
+}

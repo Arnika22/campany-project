@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="style1.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .modal-content{
+            background-image: url(background.jpg);
+            background-repeat:no-repeat ;
+            background-size: cover;
+        }
+        #search{
+            margin-top: 35px;
+        
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"> 
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal">👤 New Student</button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Student Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="First Name" class="form-label text-white"> First Name</label>
+                                        <input type="text" class="form-control" id="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Last Name" class="form-label text-white"> Fast Name</label>
+                                        <input type="text" class="form-control" id="Last Name">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="Student ID" class="form-label text-white">Student ID</label>
+                                      <input type="number" class="form-control" id="Student ID">
+                                    </div>
+                                    <div class="col-md-12">
+                                      <label for="Father Name" class="form-label text-white">Father Name</label>
+                                      <input type="text" class="form-control" id="Father Name">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="Course Name" class="form-label text-white">Course Name</label>
+                                      <select class="form-select" id="Course Name">
+                                        <option value="1">B.Tech</option>
+                                        <option value="2">B.Sci</option>
+                                        <option value="3">Advance Diploma</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="Branch Name" class="form-label text-white">Branch Name</label>
+                                      <select class="form-select" id="Branch Name">
+                                        <option value="4">CSE</option>
+                                        <option value="5">IT</option>
+                                        <option value="6">MECHANICAL</option>
+                                        <option value="7">CIVIL</option>
+                                    </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"> ❌ Close</button>
+                                      <button type="button" class="btn btn-secondary">💾 Save changes</button>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+             <div class="col-2"> 
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2">📔 New Books</button>
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Books Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="Book-ID" class="form-label text-white"> Book-ID</label>
+                                        <input type="text" class="form-control" id="Book-ID">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for=" Name" class="form-label text-white"> Name</label>
+                                        <input type="text" class="form-control" id="Name">
+                                    </div>
+                                    <div class="col-6">
+                                      <label for="Publisher" class="form-label text-white">Publisher</label>
+                                      <input type="text" class="form-control" id="Publisher">
+                                    </div>
+                                    <div class="col-4">
+                                      <label for="Publisher-Year" class="form-label text-white"> Publisher-Year</label>
+                                      <input type="number" class="form-control" id="Publisher-Year">
+                                    </div>
+                                    <div class="col-2">
+                                      <label for="Price" class="form-label text-white">Price</label>
+                                      <input type="number" class="form-control" id="Price">
+                                    </div>
+                                  </div>
+                                </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"> ❌ Close</button>
+                                      <button type="button" class="btn btn-secondary">💾 Save changes</button>
+                                    </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"> 
+                   <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal4">📑 Issue Books</button>
+                   <div class="modal" id="myModal4">
+                       <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                   <h5 class="modal-title"> Issue Books Details</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                               </div>
+                               <div class="modal-body">
+                                   <div class="row">
+                                       <div class="col-12">
+                                           <label for="Book-ID" class="form-label text-white"> Book-ID</label>
+                                           <input type="text" class="form-control" id="Book-ID">
+                                       </div>
+                                       <div class="col-12">
+                                           <label for=" Student-ID" class="form-label text-white"> Student-ID</label>
+                                           <input type="number" class="form-control" id="Student-ID">
+                                       </div>
+                                       <div class="col-6">
+                                         <label for="Issue Date" class="form-label text-white">Issue Date</label>
+                                         <input type="date" class="form-control" id="Issue Date">
+                                       </div>
+                                       <div class="col-6">
+                                         <label for="Due Date" class="form-label text-white"> Due Date</label>
+                                         <input type="date" class="form-control" id="Due Date">
+                                       </div>
+                                    </div>
+                                   </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"> ❌ Close</button>
+                                         <button type="button" class="btn btn-secondary"> 📖 Issue</button>
+                                       </div>
+           
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                <div class="col-2"> 
+                   <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal5">📤 Return Books</button>
+                   <div class="modal" id="myModal5">
+                       <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                   <h5 class="modal-title"> Return Books Details</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                               </div>
+                               <div class="modal-body">
+                                   <div class="row">
+                                       <div class="col-12">
+                                           <label for="Book-ID" class="form-label text-white"> Book-ID</label>
+                                           <input type="text" class="form-control" id="Book-ID">
+                                       </div>
+                                       <div class="col-10">
+                                           <label for=" Student-ID" class="form-label text-white"> Student-ID</label>
+                                           <input type="number" class="form-control" id="Student-ID">
+                                       </div>
+                                       <div class="col-2" id="search">
+                                           <button type="button">Search</button>
+                                       </div>
+                                       <div class="col-6">
+                                         <label for="Issue Date" class="form-label text-white">Issue Date</label>
+                                         <input type="date" class="form-control" id="Issue Date">
+                                       </div>
+                                       <div class="col-6">
+                                         <label for="Due Date" class="form-label text-white"> Due Date</label>
+                                         <input type="date" class="form-control" id="Due Date">
+                                       </div>
+                                    </div>
+                                   </div>
+                                       <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"> ❌ Close</button>
+                                         <button type="button" class="btn btn-secondary">  📤 Return</button>
+                                       </div>
+           
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal3">📊 Statistics</button>
+            <div class="modal" id="myModal3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-white">Issue Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table table-striped table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Student ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Book-ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Issue Date</th>
+                                        <th scope="col">Due Date</th>
+                                      </tr>
+                                    </thead> 
+                              </table>
+                            <h5 class="modal-title text-white">Return Details</h5>
+                            <div class="modal-body">
+                                <table class="table table table-striped table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Student ID</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Book-ID</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Issue Date</th>
+                                            <th scope="col">Due Date</th>
+                                          </tr>
+                                        </thead> 
+                                  </table>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal"> ❌ Close</button>
+                                </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           <div class="col-2">
+            <a href="/home/vandana/campany project/index.html">
+            <button type="button" class="btn btn-outline-warning">🔚 Logout</button></div>
+            </a>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

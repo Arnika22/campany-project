@@ -1,0 +1,8 @@
+body{
+    background-image: url(bgpic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn{
+    margin-top: 50px;
+}
